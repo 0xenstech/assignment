@@ -17,8 +17,24 @@
     "@types/react-dom": "^18.2.22",
     "@types/react-slick": "^0.23.8",
     "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "bitcoin-core": "^4.2.0",
+    "buffer": "^6.0.3",
+    "concurrently": "^5.3.0",
+    "config": "^3.3.3",
+    "cors": "^2.8.6",
     "dayjs": "^1.11.10",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.1",
+    "gravatar": "^1.8.1",
+    "html2canvas": "^1.4.1",
     "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "matter-js": "^0.19.0",
+    "mongoose": "^5.11.8",
+    "nodemon": "^3.0.3",
+    "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.0",
@@ -26,27 +42,12 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "room-populate": "^1.0.17",
-    "bitcoin-core":"^4.2.0",
     "slick-carousel": "^1.8.1",
     "socket.io-client": "^4.7.5",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4",
-    "concurrently": "^5.3.0",
-    "npm-run-all": "^4.1.5",
-    "nodemon": "^3.0.3",
-    "gravatar": "^1.8.1",
-    "html2canvas": "^1.4.1",
-    "jsonwebtoken": "^8.5.1",
-    "matter-js": "^0.19.0",
-    "mongoose": "^5.11.8",
-    "bcryptjs": "^2.4.3",
-    "buffer": "^6.0.3",
-    "config": "^3.3.3",
-    "dotenv": "^16.4.5",
-    "express": "^4.17.1",
-    "express-validator": "^6.8.1",
     "swr": "^2.2.4",
     "three": "^0.158.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
     "zustand": "^4.4.1"
   },
   "scripts": {
@@ -56,6 +57,7 @@
     "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:server": "node --test --test-force-exit server/tests/*.test.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -75,5 +77,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2"
   }
 }
